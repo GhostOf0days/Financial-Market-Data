@@ -1,0 +1,282 @@
+{
+  "bytes": 866012,
+  "count_of_rows": 4199,
+  "datahub": {
+    "created": "2017-11-08T23:58:10.329923",
+    "findability": "published",
+    "flowid": "core/finance-vix/978",
+    "modified": "2020-09-04T23:59:31.250569",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "9807b2b0300cf0587c63979e38656723",
+  "homepage": "http://www.cboe.com/micro/VIX/",
+  "id": "core/finance-vix",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "name": "open_data_commons_public_domain_dedication_and_license_v1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "finance-vix",
+  "profile": "data-package",
+  "resources": [
+    {
+      "bytes": 149811,
+      "count_of_rows": 4199,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/e2d12950c59569f92be095116bede5f5.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "973df4c61c634cb6d40c4c383875fada",
+      "mediatype": "text/csv",
+      "name": "vix-daily_original",
+      "path": "archive/vix-daily.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Open",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX High",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Low",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Close",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "title": "VIX Daily"
+    },
+    {
+      "bytes": 608,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpgsqaa1l5/core/finance-vix/validation_report/data/cd68f6f1942ab752261e3d68be987c01/validation_report.json",
+      "format": "json",
+      "hash": "cd68f6f1942ab752261e3d68be987c01",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 149811,
+      "count_of_rows": 4199,
+      "datahub": {
+        "derivedFrom": [
+          "vix-daily"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpgsqaa1l5/core/finance-vix/vix-daily_csv/data/973df4c61c634cb6d40c4c383875fada/vix-daily_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "973df4c61c634cb6d40c4c383875fada",
+      "mediatype": "text/csv",
+      "name": "vix-daily_csv",
+      "path": "data/vix-daily_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 4199,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Open",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX High",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Low",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Close",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true,
+      "title": "VIX Daily"
+    },
+    {
+      "bytes": 413801,
+      "count_of_rows": 4199,
+      "datahub": {
+        "derivedFrom": [
+          "vix-daily"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpgsqaa1l5/core/finance-vix/vix-daily_json/data/12dfdfb2e01c9f64393a3606da7a587e/vix-daily_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "12dfdfb2e01c9f64393a3606da7a587e",
+      "mediatype": "text/csv",
+      "name": "vix-daily_json",
+      "path": "data/vix-daily_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 4199,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Open",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX High",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Low",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "VIX Close",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true,
+      "title": "VIX Daily"
+    },
+    {
+      "bytes": 2170,
+      "dpp:streamedFrom": "/tmp/tmpjsy3oeaz/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CBOE VIX Page",
+      "path": "http://www.cboe.com/micro/vix/historical.aspx",
+      "title": "CBOE VIX Page"
+    }
+  ],
+  "title": "VIX - CBOE Volatility Index",
+  "version": "0.2.0",
+  "views": [
+    {
+      "name": "graph",
+      "spec": {
+        "group": "Date",
+        "series": [
+          "VIX Close"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "VIX - CBOE Volatility Index"
+    }
+  ]
+}

@@ -3,14 +3,15 @@ This repository is a collection of stock market data.
 
 Feel free to add your own dataset!
 
-Use this to add your dataset source!: ```| [Folder Name](URL) | Description: N/A | Last Updated: N/A |```. Feel free to add a description.
-
-Please run the ReadMe prior to creating a pull request.
-
-| Source | Description | Last Updated |
-| ------------ | -------------------- |
-| [Stock Market Data Compilation 1](https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs) | Description: Historical daily prices and volumes of all U.S. stocks and ETFs | Last Updated: November 10th 2017 |
-| [Stock Market Data Compilation 2](https://www.kaggle.com/datasets/paultimothymooney/stock-market-data) | Description: Date, Volume, High, Low, and Closing Price (for all NASDAQ, S&P500, and NYSE listed companies). | Last Updated: 5 months ago as of July 2, 2023 |
-| [Stock Market Data Compilation 3](https://www.kaggle.com/datasets/jacksoncrow/stock-market-dataset) | Description: Historical daily prices for all tickers currently trading on NASDAQ | Last Updated: April 1, 2020 |
-| [Microsoft Stock Data](https://www.kaggle.com/datasets/bilalwaseer/microsoft-stocks-from-1986-to-2023) | Description: Microsoft Corporation's stock performance from 1986 to 2023 | Last Updated: 1 month ago as of July 2, 2023 |
-| [S&P 500 Companies With Financials](https://datahub.io/core/s-and-p-500-companies-financials#data) | Description: S&P 500 Companies with Key Financial Data | Last Updated: 2 years ago as of July 2, 2023 |
+| Source | Description | Last Updated | Hedge Fund Quality (:heavy_check_mark: = yes, :x: = no) |
+| ------------ | ------------ | ------------ | ------------ |
+| [Numerai Training Dataset](https://numer.ai/) | Clean and regularized, hedge fund quality stock market data | July 1, 2023 | :heavy_check_mark: |
+| [Stock Market Data Compilation 1](https://www.kaggle.com/datasets/borismarjanovic/price-volume-data-for-all-us-stocks-etfs) | Historical daily prices and volumes of all U.S. stocks and ETFs | November 10th 2017 | :x: |
+| [Stock Market Data Compilation 2](https://www.kaggle.com/datasets/paultimothymooney/stock-market-data) | Date, Volume, High, Low, and Closing Price (for all NASDAQ, S&P500, and NYSE listed companies). | 5 months ago as of July 2, 2023 | :x: |
+| [Stock Market Data Compilation 3](https://www.kaggle.com/datasets/jacksoncrow/stock-market-dataset) | Historical daily prices for all tickers currently trading on NASDAQ | April 1, 2020 | :x: |
+| [Microsoft Stock Dataset](https://www.kaggle.com/datasets/bilalwaseer/microsoft-stocks-from-1986-to-2023) | Microsoft Corporation's stock performance from 1986 to 2023 | 1 month ago as of July 2, 2023 | :x: |
+| [S&P 500 Companies With Financials](https://datahub.io/core/s-and-p-500-companies-financials#data) | S&P 500 Companies with Key Financial Data | 2 years ago as of July 2, 2023 | :x: |
+| [Europe Brent and WTI Spot Prices](https://datahub.io/core/oil-prices) | Europe Brent and WTI (Western Texas Intermediate) Spot Prices (Annual/ Monthly/ Weekly/ Daily) from the EIA U.S. (Energy Information Administration) | July 2, 2023 | :x: |
+| [Gold Prices Dataset](https://datahub.io/core/gold-prices) | Monthly gold prices since 1950 in USD (London market). Data is sourced from the Bundesbank | 2 years ago as of July 2, 2023 | :x: |
+| [Natural Gas Prices Dataset](https://datahub.io/core/natural-gas) | Time series of major Natural Gas Prices including US Henry Hub. Data comes from U.S. Energy Information Administration EIA | 2 years ago as of July 2, 2023 | :x: |
+| [VIX - CBOE Volatility Index Dataset](https://datahub.io/core/finance-vix) | CBOE Volatility Index (VIX) time-series dataset including daily open, close, high and low | 2 years ago as of July 2, 202 | :x: |

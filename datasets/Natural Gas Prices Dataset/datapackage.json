@@ -1,0 +1,369 @@
+{
+  "bytes": 1410651,
+  "count_of_rows": 6237,
+  "datahub": {
+    "created": "2017-11-09T00:54:12.738127",
+    "findability": "published",
+    "flowid": "core/natural-gas/715",
+    "modified": "2020-09-04T23:59:33.417070",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "descriptor": "Monthly and daily prices of Natural Gas",
+  "hash": "ac7b432e33a8fe7c61177a9805d730b8",
+  "id": "core/natural-gas",
+  "keywords": [
+    "Gas",
+    "Natural gas",
+    "Natural gas daily",
+    "Natural gas monthly",
+    "eia",
+    "Natural gas eia"
+  ],
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "natural-gas",
+  "profile": "data-package",
+  "resources": [
+    {
+      "bytes": 373875,
+      "count_of_rows": 5953,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/6b1cda64851efda00ef9ead23c3b9d75.csv",
+      "encoding": "ISO-8859-2",
+      "format": "csv",
+      "hash": "bcea28ceaffd84e048759cd46c31d0b2",
+      "mediatype": "text/xls",
+      "name": "daily_original",
+      "path": "archive/daily.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 17052,
+      "count_of_rows": 284,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/79d3d22f7a1b6f8bcc3775502ee0c758.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "hash": "139a7e14c803e82e7784bd6b5b473428",
+      "mediatype": "text/xls",
+      "name": "monthly_original",
+      "path": "archive/monthly.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Month",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 998,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpypcdgt6m/core/natural-gas/validation_report/data/25dd775bd7abe568450140c5fffd3947/validation_report.json",
+      "format": "json",
+      "hash": "25dd775bd7abe568450140c5fffd3947",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 373875,
+      "count_of_rows": 5953,
+      "datahub": {
+        "derivedFrom": [
+          "daily"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpypcdgt6m/core/natural-gas/daily_csv/data/bcea28ceaffd84e048759cd46c31d0b2/daily_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "bcea28ceaffd84e048759cd46c31d0b2",
+      "mediatype": "text/xls",
+      "name": "daily_csv",
+      "path": "data/daily_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 5953,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 17052,
+      "count_of_rows": 284,
+      "datahub": {
+        "derivedFrom": [
+          "monthly"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpypcdgt6m/core/natural-gas/monthly_csv/data/139a7e14c803e82e7784bd6b5b473428/monthly_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "139a7e14c803e82e7784bd6b5b473428",
+      "mediatype": "text/xls",
+      "name": "monthly_csv",
+      "path": "data/monthly_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 284,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Month",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 225740,
+      "count_of_rows": 5953,
+      "datahub": {
+        "derivedFrom": [
+          "daily"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpypcdgt6m/core/natural-gas/daily_json/data/2e630ca50c39a1a3cf6c3aff57a1b132/daily_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "2e630ca50c39a1a3cf6c3aff57a1b132",
+      "mediatype": "text/xls",
+      "name": "daily_json",
+      "path": "data/daily_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 5953,
+      "schema": {
+        "fields": [
+          {
+            "format": "%Y-%m-%d",
+            "name": "Date",
+            "type": "date"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 10208,
+      "count_of_rows": 284,
+      "datahub": {
+        "derivedFrom": [
+          "monthly"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpypcdgt6m/core/natural-gas/monthly_json/data/dbd6262f71e7c30614c2d6eb4dfcfb72/monthly_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "dbd6262f71e7c30614c2d6eb4dfcfb72",
+      "mediatype": "text/xls",
+      "name": "monthly_json",
+      "path": "data/monthly_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 284,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Month",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 924,
+      "dpp:streamedFrom": "/tmp/tmpnahm1o80/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "sources": [
+    {
+      "name": "EIA",
+      "path": "http://www.eia.gov/naturalgas",
+      "title": "EIA"
+    }
+  ],
+  "title": "Natural gas prices",
+  "version": "0.2.0",
+  "views": [
+    {
+      "name": "graph",
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Price"
+        ],
+        "type": "line"
+      },
+      "specType": "simple",
+      "title": "Prices of Natural Gas"
+    }
+  ]
+}

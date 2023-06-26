@@ -1,0 +1,375 @@
+{
+  "bytes": 81498,
+  "count_of_rows": 917,
+  "datahub": {
+    "created": "2017-11-09T00:43:21.239791",
+    "findability": "published",
+    "flowid": "core/gold-prices/141",
+    "modified": "2020-08-31T00:01:11.904030",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "e5f2200f9dfb047fdfc4dc753ead7654",
+  "homepage": "http://www.bundesbank.de",
+  "id": "core/gold-prices",
+  "licenses": [
+    {
+      "id": "odc-pddl",
+      "name": "public_domain_dedication_and_license",
+      "url": "http://opendatacommons.org/licenses/pddl/1.0/",
+      "version": "1.0"
+    }
+  ],
+  "name": "gold-prices",
+  "profile": "data-package",
+  "related": [
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/oil-prices",
+      "publisher": "core",
+      "title": "Oil prices"
+    },
+    {
+      "formats": [
+        "CSV",
+        "JSON"
+      ],
+      "path": "/core/natural-gas",
+      "publisher": "core",
+      "title": "Natural gas"
+    }
+  ],
+  "resources": [
+    {
+      "bytes": 1190,
+      "count_of_rows": 70,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/980c0fe1ee307dd7c0c8ea0311222668.csv",
+      "encoding": "ISO-8859-2",
+      "format": "csv",
+      "hash": "a3e47e04d4fb1eb321f7c934b2002561",
+      "mediatype": "text/csv",
+      "name": "annual_original",
+      "path": "archive/annual.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Date",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 14259,
+      "count_of_rows": 847,
+      "datahub": {
+        "type": "original"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/cec9b0973e06041d235f471da39b4fe7.csv",
+      "encoding": "ISO-8859-2",
+      "format": "csv",
+      "hash": "a854338f17ba8a2d4037d6d4e686f5a9",
+      "mediatype": "text/csv",
+      "name": "monthly_original",
+      "path": "archive/monthly.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Date",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 860,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpdjrjz_6k/core/gold-prices/validation_report/data/040621447fcdcacb7f183dfd08af0367/validation_report.json",
+      "format": "json",
+      "hash": "040621447fcdcacb7f183dfd08af0367",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 1190,
+      "count_of_rows": 70,
+      "datahub": {
+        "derivedFrom": [
+          "annual"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpdjrjz_6k/core/gold-prices/annual_csv/data/a3e47e04d4fb1eb321f7c934b2002561/annual_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "a3e47e04d4fb1eb321f7c934b2002561",
+      "mediatype": "text/csv",
+      "name": "annual_csv",
+      "path": "data/annual_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 70,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Date",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 14259,
+      "count_of_rows": 847,
+      "datahub": {
+        "derivedFrom": [
+          "monthly"
+        ],
+        "type": "derived/csv"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpdjrjz_6k/core/gold-prices/monthly_csv/data/a854338f17ba8a2d4037d6d4e686f5a9/monthly_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "a854338f17ba8a2d4037d6d4e686f5a9",
+      "mediatype": "text/csv",
+      "name": "monthly_csv",
+      "path": "data/monthly_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 847,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Date",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 2623,
+      "count_of_rows": 70,
+      "datahub": {
+        "derivedFrom": [
+          "annual"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpdjrjz_6k/core/gold-prices/annual_json/data/5c28a0c1f31afd9904833df9fa908d7d/annual_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "5c28a0c1f31afd9904833df9fa908d7d",
+      "mediatype": "text/csv",
+      "name": "annual_json",
+      "path": "data/annual_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 70,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Date",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 31668,
+      "count_of_rows": 847,
+      "datahub": {
+        "derivedFrom": [
+          "monthly"
+        ],
+        "type": "derived/json"
+      },
+      "delimiter": ",",
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpdjrjz_6k/core/gold-prices/monthly_json/data/3b036045b9090ddacfaacb2deb5f19de/monthly_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "3b036045b9090ddacfaacb2deb5f19de",
+      "mediatype": "text/csv",
+      "name": "monthly_json",
+      "path": "data/monthly_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "quotechar": "\"",
+      "rowcount": 847,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "Date",
+            "type": "yearmonth"
+          },
+          {
+            "decimalChar": ".",
+            "format": "default",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    }
+  ],
+  "sources": [
+    {
+      "name": "bundesbank-gold-prices",
+      "path": "'http://www.bundesbank.de/cae/servlet/StatisticDownload?tsId=BBEX3.M.XAU.USD.EA.AC.C06&its_csvFormat=en&its_fileFormat=csv&mode=its'",
+      "title": "Bundesbank gold prices"
+    }
+  ],
+  "title": "Gold Prices",
+  "version": "0.2.0",
+  "views": [
+    {
+      "name": "graph",
+      "spec": {
+        "group": "Date",
+        "series": [
+          "Price"
+        ],
+        "type": "lines-and-points"
+      },
+      "specType": "simple",
+      "title": "Gold Prices (Monthly in USD)"
+    }
+  ]
+}
