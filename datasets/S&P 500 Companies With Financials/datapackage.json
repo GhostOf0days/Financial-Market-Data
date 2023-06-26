@@ -1,0 +1,465 @@
+{
+  "bytes": 459785,
+  "datahub": {
+    "created": "2018-04-01T15:47:47.399365",
+    "findability": "published",
+    "flowid": "core/s-and-p-500-companies-financials/3",
+    "modified": "2020-07-13T16:33:12.021361",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "5b17c0c6ad23168b10f83dc06b5a3627",
+  "id": "core/s-and-p-500-companies-financials",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "s-and-p-500-companies-financials",
+  "resources": [
+    {
+      "bytes": 18676,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/5d62bfc54919c6b7fb69e670c684c4e7.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "constituents_original",
+      "path": "archive/constituents.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "bytes": 89862,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/8e571d9a5791c6355cd5ef8455d56920.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "constituents-financials_original",
+      "path": "archive/constituents-financials.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Price",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Price/Earnings",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Dividend Yield",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Earnings/Share",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "52 Week Low",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "52 Week High",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Market Cap",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "EBITDA",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Price/Sales",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Price/Book",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "SEC Filings",
+            "type": "string"
+          }
+        ]
+      }
+    },
+    {
+      "bytes": 1068,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmprrqk26wd/core/s-and-p-500-companies-financials/validation_report/data/3bad40052a8e75281000b0647523cd2a/validation_report.json",
+      "format": "json",
+      "hash": "3bad40052a8e75281000b0647523cd2a",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 19182,
+      "datahub": {
+        "derivedFrom": [
+          "constituents"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmprrqk26wd/core/s-and-p-500-companies-financials/constituents_csv/data/5d62bfc54919c6b7fb69e670c684c4e7/constituents_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "5d62bfc54919c6b7fb69e670c684c4e7",
+      "mediatype": "text/csv",
+      "name": "constituents_csv",
+      "path": "data/constituents_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 505,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 90368,
+      "datahub": {
+        "derivedFrom": [
+          "constituents-financials"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmprrqk26wd/core/s-and-p-500-companies-financials/constituents-financials_csv/data/8e571d9a5791c6355cd5ef8455d56920/constituents-financials_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "8e571d9a5791c6355cd5ef8455d56920",
+      "mediatype": "text/csv",
+      "name": "constituents-financials_csv",
+      "path": "data/constituents-financials_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 505,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "Price",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "Price/Earnings",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "Dividend Yield",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "Earnings/Share",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "52 Week Low",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "52 Week High",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "Market Cap",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "EBITDA",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "Price/Sales",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "",
+            "groupChar": "",
+            "name": "Price/Book",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "SEC Filings",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 37820,
+      "datahub": {
+        "derivedFrom": [
+          "constituents"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmprrqk26wd/core/s-and-p-500-companies-financials/constituents_json/data/5ec6b99955047958b093bddd64df4bba/constituents_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "5ec6b99955047958b093bddd64df4bba",
+      "mediatype": "text/csv",
+      "name": "constituents_json",
+      "path": "data/constituents_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 505,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 199628,
+      "datahub": {
+        "derivedFrom": [
+          "constituents-financials"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmprrqk26wd/core/s-and-p-500-companies-financials/constituents-financials_json/data/ddf1c04b0ad45e44f976c1f32774ed9a/constituents-financials_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "ddf1c04b0ad45e44f976c1f32774ed9a",
+      "mediatype": "text/csv",
+      "name": "constituents-financials_json",
+      "path": "data/constituents-financials_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 505,
+      "schema": {
+        "fields": [
+          {
+            "description": "",
+            "name": "Symbol",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Name",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Sector",
+            "type": "string"
+          },
+          {
+            "description": "",
+            "name": "Price",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Price/Earnings",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Dividend Yield",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Earnings/Share",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "52 Week Low",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "52 Week High",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Market Cap",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "EBITDA",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Price/Sales",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "Price/Book",
+            "type": "number"
+          },
+          {
+            "description": "",
+            "name": "SEC Filings",
+            "type": "string"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 3181,
+      "dpp:streamedFrom": "/tmp/tmp9tw3t0jc/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "title": "S&P 500 Companies with Financial Information"
+}

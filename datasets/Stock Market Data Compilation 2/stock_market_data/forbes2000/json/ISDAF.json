@@ -1,0 +1,66 @@
+{
+    "chart": {
+        "result": [
+            {
+                "meta": {
+                    "currency": "USD",
+                    "symbol": "ISDAF",
+                    "exchangeName": "PNK",
+                    "instrumentType": "EQUITY",
+                    "firstTradeDate": 1369315800,
+                    "regularMarketTime": 1651760413,
+                    "gmtoffset": -18000,
+                    "timezone": "EST",
+                    "exchangeTimezoneName": "America/New_York",
+                    "regularMarketPrice": 5.44,
+                    "chartPreviousClose": 5.44,
+                    "priceHint": 2,
+                    "currentTradingPeriod": {
+                        "pre": {
+                            "timezone": "EST",
+                            "start": 1670835600,
+                            "end": 1670855400,
+                            "gmtoffset": -18000
+                        },
+                        "regular": {
+                            "timezone": "EST",
+                            "start": 1670855400,
+                            "end": 1670878800,
+                            "gmtoffset": -18000
+                        },
+                        "post": {
+                            "timezone": "EST",
+                            "start": 1670878800,
+                            "end": 1670893200,
+                            "gmtoffset": -18000
+                        }
+                    },
+                    "dataGranularity": "1d",
+                    "range": "",
+                    "validRanges": [
+                        "1d",
+                        "5d",
+                        "1mo",
+                        "3mo",
+                        "6mo",
+                        "1y",
+                        "2y",
+                        "5y",
+                        "10y",
+                        "ytd",
+                        "max"
+                    ]
+                },
+                "indicators": {
+                    "quote": [
+                        {}
+                    ],
+                    "adjclose": [
+                        {}
+                    ]
+                }
+            }
+        ],
+        "error": null
+    }
+}
