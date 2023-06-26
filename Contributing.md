@@ -1,6 +1,6 @@
-Use this to add your dataset source!: ```| [Folder Name](URL) | Description: N/A | Last Updated: N/A | Hedge Fund Quality (:heavy_check_mark: = yes, :x: = no) |```. Feel free to add a description. The top should contain hedge-fund quality datasets.
+Use this to add your dataset source!: ```| [Folder Name](URL) | Description: N/A | Last Updated: N/A | Hedge Fund Quality (:heavy_check_mark: = yes, :test_tube: for research dataset, :x: = no) | [Research Paper Citation](URL) | [Research Code](URL) |```. Feel free to add a description. The general order should be hedge-fund quality datasets followed by research datasets followed by any other datasets.
 
-Symbols Markdown: Checkmark -  ```:heavy_check_mark:```, ```:x:```
+Symbols Markdown: Checkmark -  ```:heavy_check_mark:```, No - ```:x:```, Test Tube - ```:test_tube:```
 
 Please run the trimmer.py in the scripts folder prior to creating a pull request.
 
