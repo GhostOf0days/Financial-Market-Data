@@ -13,6 +13,6 @@ def trim_md_file(file_path):
     with open(file_path, 'w') as file:
         file.write(trimmed_content)
 
-# Usage example
+# Use absolute path
 md_file_path = './ReadMe.md'
 trim_md_file(md_file_path)

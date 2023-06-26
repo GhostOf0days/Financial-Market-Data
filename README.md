@@ -1,6 +1,8 @@
 # Stock-Market-Data
 This repository is a collection of stock market data.
 
+For large files that are stored with Git LFS (3 lines containing version, oid sha256, and size), please see this guide on how to access the original content: https://gist.github.com/fkraeutli/66fa741d9a8c2a6a238a01d17ed0edc5
+
 Feel free to add your own dataset!
 
 | Source | Description | Last Updated | Hedge Fund Quality (:heavy_check_mark: = yes, :x: = no) |
