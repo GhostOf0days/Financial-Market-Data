@@ -4,7 +4,12 @@ Symbols Markdown: Checkmark -  ```:heavy_check_mark:```, No - ```:x:```, Test Tu
 
 Please run the trimmer.py in the scripts folder prior to creating a pull request.
 
-**Large files: Please store the file in a zip folder within the folder for that dataset. If it is still too big (100 Mb or larger), please run the compress function in the **'gzipTool.py'** file to compress the file and remove the uncompressed file. Please pay attention to the console. If the compressed file is still over 100 Mb, please use a different method of your choice, but make sure it is under 100 Mb.**
+**Large files:** 
+**Option 1**: Compress the file using [7-Zip](https://www.7-zip.org/). If the compressed file is still over 100 Mb, please use a different method of your choice, but make sure it is under 100 Mb.
+
+**Option 2**: Store the file in a zip folder within the folder for that dataset. If it is still too big (100 Mb or larger), please run the compress function in the *'gzipTool.py'* file to compress the file and remove the uncompressed file. Please pay attention to the console. If the compressed file is still over 100 Mb, please use a different method of your choice, but make sure it is under 100 Mb.
+
+**Option 3**: Use a method of your choice. However, make sure the file you commit is under 100 Mb.
 
 To learn more about gzip, please read the [documentation](https://www.gnu.org/software/gzip/manual/gzip.html).
 
