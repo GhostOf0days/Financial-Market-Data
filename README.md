@@ -10,7 +10,7 @@ Feel free to add your own dataset!
 Note: For the hedge fund quality section, :heavy_check_mark: means the dataset is hedge fund quality, :test_tube: means the dataset is a research dataset, and :x: means the dataset is not hedge fund quality nor a research dataset.
 
 | Source | Description | Last Updated | Hedge Fund Quality | Research Paper | Research Code |
-| ------------ | ------------ | ------------ | :----------: | :----------: | :----------: |
+| ------------ | ------------ | :----------: | :----------: | :----------: | :----------: |
 | [Numerai Training Dataset](https://numer.ai/) | Clean and regularized, hedge fund quality stock market data | July 1, 2023 | :heavy_check_mark: | :x: | :x: |
 | [StockNet Dataset](https://github.com/yumoxu/stocknet-dataset) | The StockNet dataset is a comprehensive dataset for stock movement prediction from tweets and historical stock prices. | Nov 2, 2018 | :test_tube: | [Yumo Xu and Shay B. Cohen. 2018. Stock Movement Prediction from Tweets and Historical Prices. In Proceedings of the 56st Annual Meeting of the Association for Computational Linguistics. Melbourne, Australia, volume 1.](https://aclanthology.org/P18-1183.pdf) | [StockNet Code](https://github.com/yumoxu/stocknet-code) |
 | [EDT Dataset](https://github.com/Zhihan1996/TradeTheEvent/tree/main/data) | The EDT dataset is designed for corporate event detection and text-based stock prediction (trading strategy) benchmark. | 2 years ago as of July 2, 2023 | :test_tube: | [Zhihan Zhou, Liqian Ma, Han Liu. Trade the Event: Corporate Events Detection for News-Based Event-Driven Trading. In Findings of ACL 2021.](https://aclanthology.org/2021.findings-acl.186.pdf) | [TradeTheEvent Code](https://github.com/Zhihan1996/TradeTheEvent/tree/main) |
