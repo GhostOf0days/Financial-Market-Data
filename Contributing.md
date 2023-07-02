@@ -4,22 +4,8 @@ Symbols Markdown: Checkmark -  ```:heavy_check_mark:```, No - ```:x:```, Test Tu
 
 Please run the trimmer.py in the scripts folder prior to creating a pull request.
 
-Large files: Please store the file in a zip folder within the folder for that dataset. If it is still too big, please use Git LFS (Large File System) to store the zip folder that is 100 Mb or larger (see Numerai Training Dataset as an example).
+**Large files: Please store the file in a zip folder within the folder for that dataset. If it is still too big (100 Mb or larger), please run the compress function in the **'gzipTool.py'** file to compress the file and remove the uncompressed file. Please pay attention to the console. If the compressed file is still over 100 Mb, please use a different method of your choice, but make sure it is under 100 Mb.**
 
-Please track the individual large datasets like this: ```git lfs track "numerai_training_data_int8.csv"```
+To learn more about gzip, please read the [documentation](https://www.gnu.org/software/gzip/manual/gzip.html).
 
-
-For files exceeding these [limits](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-git-large-file-storage) (preferably 2 GB), please compress the file (see compressor.py in the scripts folder) before using Git LFS: 
-
-| Account Type | Git LFS Maximum File Size |
-| ------------ | ------------ |
-| GitHub Free |	2 GB |
-| GitHub Pro | 2 GB | 
-| GitHub Team | 4 GB |
-| GitHub Enterprise Cloud | 5 GB |
-
-GIT LFS (Large File System) Guides:
-[Advanced Reactors and Fuel Cycles Github LFS Guide](https://arfc.github.io/manual/guides/git-lfs)
-[Github Docs Git LFS Guide](https://docs.github.com/en/repositories/working-with-files/managing-large-files/configuring-git-large-file-storage)
-[Atlassian Git LFS Guide](https://www.atlassian.com/git/tutorials/git-lfs)
-[Medium Git LFS Guide](https://medium.com/junior-dev/how-to-use-git-lfs-large-file-storage-to-push-large-files-to-github-41c8db1e2d65)
+Note: Please avoid Git LFS as Github charges money after using over 1 GB. I am a college student and would rather not pay for Git LFS datapacks.

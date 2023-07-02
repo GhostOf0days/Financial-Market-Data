@@ -1,8 +1,5 @@
 Numerai[[:space:]]Training[[:space:]]Dataset.zip filter=lfs diff=lfs merge=lfs -text
-evaluate_news.json filter=lfs diff=lfs merge=lfs -text
-aapl_2016_2020.csv filter=lfs diff=lfs merge=lfs -text
-aapl_2021_2023.csv filter=lfs diff=lfs merge=lfs -text
-nvda_2020_2022.csv filter=lfs diff=lfs merge=lfs -text
-qqq_2020_2022.csv filter=lfs diff=lfs merge=lfs -text
-spy_2020_2022.csv filter=lfs diff=lfs merge=lfs -text
-tsla_2019_2022.csv filter=lfs diff=lfs merge=lfs -text
+evaluate_news.json.gz filter=lfs diff=lfs merge=lfs -text
+qqq_2020_2022.csv.gz filter=lfs diff=lfs merge=lfs -text
+spy_2020_2022.csv.gz filter=lfs diff=lfs merge=lfs -text
+tsla_2019_2022.csv.gz filter=lfs diff=lfs merge=lfs -text

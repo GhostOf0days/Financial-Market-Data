@@ -1,11 +1,12 @@
 # Stock-Market-Data
 This repository is a collection of stock market data and other relevant data.
 
-For large files that are stored with Git LFS (3 lines containing version, oid sha256, and size), please see this [guide](https://gist.github.com/fkraeutli/66fa741d9a8c2a6a238a01d17ed0edc5) on how to access the original content.
+** Large files **
+Large files (over 100 Mb) may be gzipped (.gz file extension) to enable storage on Github. To un-gzip large files and return the original file, please run the decompress function in the scripts folder. Please comment out the compress function. Example inputs are in comments for your convenience. To learn more about the gzip compression algorithm, please read the [documentation](https://www.gnu.org/software/gzip/manual/gzip.html).
 
 A good source of alternative data is [Quiver Quantitative](https://www.quiverquant.com/).
 
-Feel free to add your own dataset!
+**Feel free to add your own datasets!**
 
 Note: For the hedge fund quality section, :heavy_check_mark: means the dataset is hedge fund quality, :test_tube: means the dataset is a research dataset, and :x: means the dataset is not hedge fund quality nor a research dataset.
 
