@@ -3,3 +3,4 @@ evaluate_news.json.gz filter=lfs diff=lfs merge=lfs -text
 qqq_2020_2022.csv.gz filter=lfs diff=lfs merge=lfs -text
 spy_2020_2022.csv.gz filter=lfs diff=lfs merge=lfs -text
 tsla_2019_2022.csv.gz filter=lfs diff=lfs merge=lfs -text
+eurusd_minute.csv.gz filter=lfs diff=lfs merge=lfs -text
