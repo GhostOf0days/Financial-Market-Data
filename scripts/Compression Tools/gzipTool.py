@@ -26,13 +26,13 @@ def decompress(input_file, output_file):
     print('File successfully decompressed.')
 
 # Example values:
-# input_file = '../datasets/$AAPL Option Chains Dataset/aapl_2016_2020.csv' or '../datasets/$AAPL Option Chains Dataset/aapl_2016_2020.csv.gz'
-# compressed_file = '../datasets/$AAPL Option Chains Dataset/aapl_2016_2020.csv.gz'
-# decompressed_file = '../datasets/$AAPL Option Chains Dataset/aapl_2016_2020_decompressed.csv'
+# input_file = '../../datasets/$AAPL Option Chains Dataset/aapl_2016_2020.csv' or '../datasets/$AAPL Option Chains Dataset/aapl_2016_2020.csv.gz'
+# compressed_file = '../../datasets/$AAPL Option Chains Dataset/aapl_2016_2020.csv.gz'
+# decompressed_file = '../../datasets/$AAPL Option Chains Dataset/aapl_2016_2020_decompressed.csv'
 
-input_file = '../datasets/folder/file_name.file_extension'
-compressed_file = '../datasets/folder/file_name.file_extension.gz'
-decompressed_file = '../datasets/folder/file_name_decompressed.file_extension'
+input_file = '../../datasets/folder/file_name.file_extension'
+compressed_file = '../../datasets/folder/file_name.file_extension.gz'
+decompressed_file = '../../datasets/folder/file_name_decompressed.file_extension'
 
 # Comment whichever one you don't need (compression or decompression) by adding # in front of the function call
 

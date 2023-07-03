@@ -2,7 +2,7 @@
 This repository is a collection of stock market data and other relevant data.
 
 ** Large files **
-Large files (over 100 Mb) may be gzipped (.gz file extension) to enable storage on Github. To un-gzip large files and return the original file, please run the decompress function in the scripts folder. Please comment out the compress function. Example inputs are in comments for your convenience. To learn more about the gzip compression algorithm, please read the [documentation](https://www.gnu.org/software/gzip/manual/gzip.html).
+Large files (over 100 Mb) may be gzipped (.gz file extension) to enable storage on Github. To un-gzip large files and return the original file, please run the decompress function in the *'gzipTool.poy'* file within the Compression Tools folder (check the scripts folder). Please comment out the compress function. Example inputs are in comments for your convenience. To learn more about the gzip compression algorithm, please read the [documentation](https://www.gnu.org/software/gzip/manual/gzip.html).
 
 A good source of alternative data is [Quiver Quantitative](https://www.quiverquant.com/).
 
