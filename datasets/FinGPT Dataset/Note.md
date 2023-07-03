@@ -1,0 +1,1 @@
+Please visit the [Github Repo](https://github.com/AI4Finance-Foundation/FinGPT/tree/master) and run scripts necessary on the dataset.
